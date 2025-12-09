@@ -1,0 +1,11 @@
+# Ensure proper MIME types for image files
+AddType image/jpeg .jpg
+AddType image/png .png
+AddType image/gif .gif
+AddType image/webp .webp
+
+# Allow all access if .htaccess is working
+<Files "*">
+    Order allow,deny
+    Allow from all
+</Files>

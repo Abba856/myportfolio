@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,47 +47,57 @@
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
+
         .gradient-text {
             background: linear-gradient(135deg, #6366f1, #ec4899);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .gradient-bg {
             background: linear-gradient(135deg, #6366f1, #ec4899);
         }
+
         .section-padding {
             padding-top: 12rem;
             padding-bottom: 12rem;
         }
+
         @media (max-width: 768px) {
             .section-padding {
                 padding-top: 6rem;
                 padding-bottom: 6rem;
             }
         }
+
         .glass {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
         }
+
         .dark .glass {
             background: rgba(15, 23, 42, 0.3);
         }
+
         .card-hover {
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
+
         .card-hover:hover {
             transform: translateY(-12px) scale(1.02);
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800 dark:bg-darker dark:text-slate-100">
     <!-- Navigation -->
     <nav class="fixed w-full z-50 py-5 transition-all duration-500" id="navbar">
@@ -95,40 +106,53 @@
                 <a href="#" class="text-2xl font-bold gradient-text">
                     <i class="fas fa-bolt mr-2"></i>CodeStop
                 </a>
-                
+
                 <div class="hidden md:flex space-x-10">
-                    <a href="#home" class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
+                    <a href="#home"
+                        class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
                         Home
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#about" class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
+                    <a href="#about"
+                        class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
                         About
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#team" class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
+                    <a href="#team"
+                        class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
                         Team
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#services" class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
+                    <a href="#services"
+                        class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
                         Services
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#projects" class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
+                    <a href="#projects"
+                        class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
                         Projects
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#contact" class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
+                    <a href="#contact"
+                        class="nav-link text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative group">
                         Contact
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </div>
-                
+
                 <div class="flex items-center space-x-4">
-                    <button id="theme-toggle" class="p-3 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-primary hover:text-white transition-all duration-300">
+                    <button id="theme-toggle"
+                        class="p-3 rounded-full bg-slate-200 dark:bg-slate-700 hover:bg-primary hover:text-white transition-all duration-300">
                         <i class="fas fa-moon dark:hidden"></i>
                         <i class="fas fa-sun hidden dark:block"></i>
                     </button>
-                    
+
                     <button id="nav-toggle" class="md:hidden flex flex-col space-y-1 p-2">
                         <span class="w-6 h-0.5 bg-slate-700 dark:bg-slate-300 transition-all"></span>
                         <span class="w-6 h-0.5 bg-slate-700 dark:bg-slate-300 transition-all"></span>
@@ -136,15 +160,21 @@
                     </button>
                 </div>
             </div>
-            
+
             <div id="nav-menu" class="hidden md:hidden mt-6 pb-4">
                 <div class="flex flex-col space-y-4">
-                    <a href="#home" class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">Home</a>
-                    <a href="#about" class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">About</a>
-                    <a href="#team" class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">Team</a>
-                    <a href="#services" class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">Services</a>
-                    <a href="#projects" class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">Projects</a>
-                    <a href="#contact" class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">Contact</a>
+                    <a href="#home"
+                        class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">Home</a>
+                    <a href="#about"
+                        class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">About</a>
+                    <a href="#team"
+                        class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">Team</a>
+                    <a href="#services"
+                        class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">Services</a>
+                    <a href="#projects"
+                        class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">Projects</a>
+                    <a href="#contact"
+                        class="text-lg text-slate-700 dark:text-slate-300 hover:text-primary transition-colors nav-link py-2">Contact</a>
                 </div>
             </div>
         </div>
@@ -153,11 +183,17 @@
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
         <div class="absolute inset-0 z-0">
-            <div class="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow"></div>
-            <div class="absolute top-40 right-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow animation-delay-2000"></div>
-            <div class="absolute bottom-20 left-1/2 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow animation-delay-4000"></div>
+            <div
+                class="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow">
+            </div>
+            <div
+                class="absolute top-40 right-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow animation-delay-2000">
+            </div>
+            <div
+                class="absolute bottom-20 left-1/2 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow animation-delay-4000">
+            </div>
         </div>
-        
+
         <div class="container mx-auto px-6 lg:px-8 text-center z-10 relative">
             <div class="max-w-4xl mx-auto">
                 <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
@@ -165,19 +201,22 @@
                     <span class="text-slate-800 dark:text-slate-100">Into Digital Reality</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto">
-                    We build innovative solutions that push the boundaries of technology and design, creating exceptional digital experiences.
+                    We build innovative solutions that push the boundaries of technology and design, creating
+                    exceptional digital experiences.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#projects" class="inline-flex items-center justify-center bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg">
+                    <a href="#projects"
+                        class="inline-flex items-center justify-center bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg">
                         <i class="fas fa-rocket mr-2"></i> View Our Work
                     </a>
-                    <a href="#contact" class="inline-flex items-center justify-center bg-white dark:bg-slate-800 text-primary border-2 border-primary px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300 text-lg">
+                    <a href="#contact"
+                        class="inline-flex items-center justify-center bg-white dark:bg-slate-800 text-primary border-2 border-primary px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300 text-lg">
                         <i class="fas fa-paper-plane mr-2"></i> Get in Touch
                     </a>
                 </div>
             </div>
         </div>
-        
+
         <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
             <a href="#about" class="text-slate-500 dark:text-slate-400">
                 <i class="fas fa-chevron-down text-2xl"></i>
@@ -192,10 +231,12 @@
                 <div class="lg:w-1/2">
                     <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Our Story</h2>
                     <p class="text-lg text-slate-600 dark:text-slate-300 mb-6">
-                        Founded with a vision to revolutionize the digital landscape, CodeStop brings together creative minds and technical expertise to build transformative solutions.
+                        Founded with a vision to revolutionize the digital landscape, CodeStop brings together creative
+                        minds and technical expertise to build transformative solutions.
                     </p>
                     <p class="text-lg text-slate-600 dark:text-slate-300 mb-8">
-                        We believe in pushing boundaries, embracing innovation, and creating meaningful experiences that resonate with users and drive business success.
+                        We believe in pushing boundaries, embracing innovation, and creating meaningful experiences that
+                        resonate with users and drive business success.
                     </p>
                     <div class="grid grid-cols-2 gap-6">
                         <div class="text-center p-6 bg-slate-50 dark:bg-slate-800 rounded-xl">
@@ -210,9 +251,14 @@
                 </div>
                 <div class="lg:w-1/2 flex justify-center">
                     <div class="relative">
-                        <div class="w-80 h-80 bg-gradient-to-r from-primary to-secondary rounded-2xl shadow-xl transform rotate-6"></div>
-                        <div class="absolute -top-6 -right-6 w-80 h-80 bg-gradient-to-r from-secondary to-accent rounded-2xl shadow-xl transform -rotate-6"></div>
-                        <div class="absolute top-6 left-6 w-64 h-64 bg-slate-200 dark:bg-slate-700 rounded-xl shadow-2xl flex items-center justify-center">
+                        <div
+                            class="w-80 h-80 bg-gradient-to-r from-primary to-secondary rounded-2xl shadow-xl transform rotate-6">
+                        </div>
+                        <div
+                            class="absolute -top-6 -right-6 w-80 h-80 bg-gradient-to-r from-secondary to-accent rounded-2xl shadow-xl transform -rotate-6">
+                        </div>
+                        <div
+                            class="absolute top-6 left-6 w-64 h-64 bg-slate-200 dark:bg-slate-700 rounded-xl shadow-2xl flex items-center justify-center">
                             <i class="fas fa-lightbulb text-8xl gradient-text opacity-20"></i>
                         </div>
                     </div>
@@ -230,15 +276,18 @@
                     Comprehensive solutions tailored to your business needs and goals
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg card-hover border border-slate-100 dark:border-slate-700 group">
-                    <div class="w-16 h-16 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg card-hover border border-slate-100 dark:border-slate-700 group">
+                    <div
+                        class="w-16 h-16 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                         <i class="fas fa-laptop-code text-2xl text-primary"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 dark:text-slate-100">Web Development</h3>
                     <p class="text-slate-600 dark:text-slate-300 mb-6">
-                        Custom web applications built with modern technologies for optimal performance and user experience.
+                        Custom web applications built with modern technologies for optimal performance and user
+                        experience.
                     </p>
                     <ul class="space-y-2">
                         <li class="flex items-center text-slate-600 dark:text-slate-300">
@@ -252,14 +301,17 @@
                         </li>
                     </ul>
                 </div>
-                
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg card-hover border border-slate-100 dark:border-slate-700 group">
-                    <div class="w-16 h-16 rounded-xl bg-secondary/10 dark:bg-secondary/20 flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
+
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg card-hover border border-slate-100 dark:border-slate-700 group">
+                    <div
+                        class="w-16 h-16 rounded-xl bg-secondary/10 dark:bg-secondary/20 flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
                         <i class="fas fa-mobile-alt text-2xl text-secondary"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 dark:text-slate-100">App Development</h3>
                     <p class="text-slate-600 dark:text-slate-300 mb-6">
-                        Native and cross-platform mobile applications designed to engage users and drive business growth.
+                        Native and cross-platform mobile applications designed to engage users and drive business
+                        growth.
                     </p>
                     <ul class="space-y-2">
                         <li class="flex items-center text-slate-600 dark:text-slate-300">
@@ -273,14 +325,17 @@
                         </li>
                     </ul>
                 </div>
-                
-                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg card-hover border border-slate-100 dark:border-slate-700 group">
-                    <div class="w-16 h-16 rounded-xl bg-accent/10 dark:bg-accent/20 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg card-hover border border-slate-100 dark:border-slate-700 group">
+                    <div
+                        class="w-16 h-16 rounded-xl bg-accent/10 dark:bg-accent/20 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
                         <i class="fas fa-paint-brush text-2xl text-accent"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 dark:text-slate-100">Design & UX</h3>
                     <p class="text-slate-600 dark:text-slate-300 mb-6">
-                        User-centered design solutions that create intuitive, engaging, and accessible digital experiences.
+                        User-centered design solutions that create intuitive, engaging, and accessible digital
+                        experiences.
                     </p>
                     <ul class="space-y-2">
                         <li class="flex items-center text-slate-600 dark:text-slate-300">
@@ -307,17 +362,20 @@
                     Passionate professionals dedicated to delivering exceptional results
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center group">
                     <div class="relative mx-auto mb-6">
-                        <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
+                        <div
+                            class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
                             <img src="images/team/isah.jpg" alt="CEO" class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full opacity-0 group-hover:opacity-20 transition-opacity rounded-full">
+                        </div>
                     </div>
                     <h3 class="text-2xl font-bold mb-2 dark:text-slate-100">ISAH ABDULLAHI ISAH</h3>
-                    <p class="text-primary font-semibold mb-3">CEO & Founder</p>
+                    <p class="text-primary font-semibold mb-3">Team lead</p>
                     <p class="text-slate-600 dark:text-slate-300">
                         Visionary leader with 5+ years in tech innovation.
                     </p>
@@ -328,20 +386,25 @@
                         <a href="#" class="text-slate-400 hover:text-primary transition-colors">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://github.com/Abba856" class="text-slate-400 hover:text-primary transition-colors">
+                        <a href="https://github.com/Abba856"
+                            class="text-slate-400 hover:text-primary transition-colors">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="text-center group">
                     <div class="relative mx-auto mb-6">
-                        <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
-                            <div class="w-full h-full bg-gradient-to-r from-secondary to-accent flex items-center justify-center text-white text-5xl font-bold">
+                        <div
+                            class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
+                            <div
+                                class="w-full h-full bg-gradient-to-r from-secondary to-accent flex items-center justify-center text-white text-5xl font-bold">
                                 <span class="text-white text-5xl font-bold">SM</span>
                             </div>
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-r from-secondary to-accent rounded-full opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-secondary to-accent rounded-full opacity-0 group-hover:opacity-20 transition-opacity rounded-full">
+                        </div>
                     </div>
                     <h3 class="text-2xl font-bold mb-2 dark:text-slate-100">Sarah Miller</h3>
                     <p class="text-primary font-semibold mb-3">CTO</p>
@@ -360,15 +423,19 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="text-center group">
                     <div class="relative mx-auto mb-6">
-                        <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
-                            <div class="w-full h-full bg-gradient-to-r from-accent to-primary flex items-center justify-center text-white text-5xl font-bold">
+                        <div
+                            class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
+                            <div
+                                class="w-full h-full bg-gradient-to-r from-accent to-primary flex items-center justify-center text-white text-5xl font-bold">
                                 <span class="text-white text-5xl font-bold">RB</span>
                             </div>
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-r from-accent to-primary rounded-full opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-accent to-primary rounded-full opacity-0 group-hover:opacity-20 transition-opacity rounded-full">
+                        </div>
                     </div>
                     <h3 class="text-2xl font-bold mb-2 dark:text-slate-100">Robert Brown</h3>
                     <p class="text-primary font-semibold mb-3">Lead Developer</p>
@@ -387,15 +454,19 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="text-center group">
                     <div class="relative mx-auto mb-6">
-                        <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
-                            <div class="w-full h-full bg-gradient-to-r from-primary to-accent flex items-center justify-center text-white text-5xl font-bold">
+                        <div
+                            class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
+                            <div
+                                class="w-full h-full bg-gradient-to-r from-primary to-accent flex items-center justify-center text-white text-5xl font-bold">
                                 <span class="text-white text-5xl font-bold">EL</span>
                             </div>
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full opacity-0 group-hover:opacity-20 transition-opacity rounded-full"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full opacity-0 group-hover:opacity-20 transition-opacity rounded-full">
+                        </div>
                     </div>
                     <h3 class="text-2xl font-bold mb-2 dark:text-slate-100">Emma Lee</h3>
                     <p class="text-primary font-semibold mb-3">Design Director</p>
@@ -427,10 +498,12 @@
                     Showcasing our most innovative and impactful work
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-xl card-hover border border-slate-100 dark:border-slate-700">
-                    <div class="h-64 bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-4xl font-bold">
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-xl card-hover border border-slate-100 dark:border-slate-700">
+                    <div
+                        class="h-64 bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-4xl font-bold">
                         Fintech Dashboard
                     </div>
                     <div class="p-8">
@@ -448,9 +521,11 @@
                         </a>
                     </div>
                 </div>
-                
-                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-xl card-hover border border-slate-100 dark:border-slate-700">
-                    <div class="h-64 bg-gradient-to-r from-secondary to-accent flex items-center justify-center text-white text-4xl font-bold">
+
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-xl card-hover border border-slate-100 dark:border-slate-700">
+                    <div
+                        class="h-64 bg-gradient-to-r from-secondary to-accent flex items-center justify-center text-white text-4xl font-bold">
                         Health App
                     </div>
                     <div class="p-8">
@@ -461,16 +536,19 @@
                         </div>
                         <h3 class="text-2xl font-bold mb-3 dark:text-slate-100">Wellness Companion</h3>
                         <p class="text-slate-600 dark:text-slate-300 mb-4">
-                            AI-powered health tracking application with personalized recommendations and telemedicine features.
+                            AI-powered health tracking application with personalized recommendations and telemedicine
+                            features.
                         </p>
                         <a href="#" class="text-secondary hover:underline font-medium flex items-center">
                             View Case Study <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
-                
-                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-xl card-hover border border-slate-100 dark:border-slate-700">
-                    <div class="h-64 bg-gradient-to-r from-accent to-primary flex items-center justify-center text-white text-4xl font-bold">
+
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-xl card-hover border border-slate-100 dark:border-slate-700">
+                    <div
+                        class="h-64 bg-gradient-to-r from-accent to-primary flex items-center justify-center text-white text-4xl font-bold">
                         E-Learning Platform
                     </div>
                     <div class="p-8">
@@ -488,9 +566,11 @@
                         </a>
                     </div>
                 </div>
-                
-                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-xl card-hover border border-slate-100 dark:border-slate-700">
-                    <div class="h-64 bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-4xl font-bold">
+
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-xl card-hover border border-slate-100 dark:border-slate-700">
+                    <div
+                        class="h-64 bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-4xl font-bold">
                         E-Commerce Suite
                     </div>
                     <div class="p-8">
@@ -522,11 +602,11 @@
                         Ready to start your next project? Let's talk about how we can help.
                     </p>
                 </div>
-                
+
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                     <div>
                         <h3 class="text-2xl font-bold mb-8 dark:text-slate-100">Let's start a conversation</h3>
-                        
+
                         <div class="space-y-8">
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 bg-primary/10 dark:bg-primary/20 p-4 rounded-xl">
@@ -537,7 +617,7 @@
                                     <p class="text-slate-600 dark:text-slate-300 mt-1">info@codestopinfotech.com</p>
                                 </div>
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 bg-secondary/10 dark:bg-secondary/20 p-4 rounded-xl">
                                     <i class="fas fa-phone text-secondary text-xl"></i>
@@ -547,7 +627,7 @@
                                     <p class="text-slate-600 dark:text-slate-300 mt-1">+234 (816) 792-8397</p>
                                 </div>
                             </div>
-                            
+
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 bg-accent/10 dark:bg-accent/20 p-4 rounded-xl">
                                     <i class="fas fa-map-marker-alt text-accent text-xl"></i>
@@ -561,55 +641,70 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="mt-12">
                             <h4 class="text-xl font-bold mb-6 dark:text-slate-100">Follow Us</h4>
                             <div class="flex space-x-6">
-                                <a href="#" class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">
+                                <a href="#"
+                                    class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">
+                                <a href="#"
+                                    class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">
                                     <i class="fab fa-twitter"></i>
                                 </a>
-                                <a href="#" class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">
+                                <a href="#"
+                                    class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">
+                                <a href="#"
+                                    class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-colors">
                                     <i class="fab fa-dribbble"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 shadow-lg">
                         <form class="space-y-6" action="send_email.php" method="post">
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-sm font-medium mb-2 dark:text-slate-300">First Name</label>
-                                    <input type="text" name="firstName" class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John" required>
+                                    <input type="text" name="firstName"
+                                        class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                        placeholder="John" required>
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium mb-2 dark:text-slate-300">Last Name</label>
-                                    <input type="text" name="lastName" class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Doe" required>
+                                    <input type="text" name="lastName"
+                                        class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                        placeholder="Doe" required>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <label class="block text-sm font-medium mb-2 dark:text-slate-300">Email</label>
-                                <input type="email" name="email" class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com" required>
+                                <input type="email" name="email"
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    placeholder="john@example.com" required>
                             </div>
-                            
+
                             <div>
                                 <label class="block text-sm font-medium mb-2 dark:text-slate-300">Subject</label>
-                                <input type="text" name="subject" class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Project Inquiry" required>
+                                <input type="text" name="subject"
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    placeholder="Project Inquiry" required>
                             </div>
-                            
+
                             <div>
                                 <label class="block text-sm font-medium mb-2 dark:text-slate-300">Message</label>
-                                <textarea name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tell us about your project..." required></textarea>
+                                <textarea name="message" rows="5"
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    placeholder="Tell us about your project..." required></textarea>
                             </div>
-                            
-                            <button type="submit" class="w-full bg-gradient-to-r from-primary to-secondary text-white px-6 py-4 rounded-lg font-semibold hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+
+                            <button type="submit"
+                                class="w-full bg-gradient-to-r from-primary to-secondary text-white px-6 py-4 rounded-lg font-semibold hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
                                 Send Message
                             </button>
                         </form>
@@ -631,18 +726,21 @@
                         Transforming ideas into digital reality through innovative technology and design.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold mb-6 dark:text-slate-100">Services</h4>
                     <ul class="space-y-3">
@@ -652,7 +750,7 @@
                         <li><a href="#" class="hover:text-primary transition-colors">Consulting</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold mb-6 dark:text-slate-100">Company</h4>
                     <ul class="space-y-3">
@@ -662,7 +760,7 @@
                         <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold mb-6 dark:text-slate-100">Contact</h4>
                     <ul class="space-y-3">
@@ -681,7 +779,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="border-t border-slate-800 mt-12 pt-8 text-center">
                 <p>© <span id="current-year">2025</span> CodeStop Info. Tech. All rights reserved.</p>
             </div>
@@ -690,4 +788,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
